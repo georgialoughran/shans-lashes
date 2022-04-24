@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LashServiceService } from 'src/services/lash-services/lash-service.service';
 
 @Component({
   selector: 'app-tab2',
@@ -6,7 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  listOfServices: any;
 
-  constructor() {}
+  constructor(public lashService:LashServiceService) {
+    //this.listOfServices=lashService.getService();
+    //console.log(this.listOfServices);
+  }
+
+  public ngOnInit() {
+    this.listOfServices=this.lashService.getService();
+    console.log(this.listOfServices);
+  }
 
 }
