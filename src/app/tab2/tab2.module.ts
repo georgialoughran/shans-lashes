@@ -8,15 +8,19 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { LashServiceService } from 'src/services/lash-services/lash-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    LashServiceService,
+    HttpClientModule,
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
+  ],
+  providers: [
+    LashServiceService
   ],
   declarations: [Tab2Page]
 })
