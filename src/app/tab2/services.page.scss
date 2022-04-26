@@ -1,0 +1,25 @@
+.page-header {
+  width: 100%;
+  display: block;
+
+  .intro-container {
+    margin: 0px auto;
+    width: 50%;
+  }
+}
+
+
+.service-container {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+
+  .service {
+    flex: 1;
+  }
+
+  .service-description {
+    height: 150px;
+  }
+}

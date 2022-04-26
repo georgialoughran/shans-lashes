@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Services
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="page-header">
+    <div class="intro-container">
+      <h2>Shan's Lashes provides the most up to date and cutting edge services to our customers. We guarantee you will be satisfied with the reuslts.</h2>
+    </div>
+  </div>
+  <div class="service-container">
+    <div class="service" *ngFor="let service of this.listOfServices">
+      <ion-card>
+        <ion-card-header>
+          <ion-thumbnail slot="start">
+            <ion-img [src]="'../../assets/unnamed.jpg'"></ion-img>
+          </ion-thumbnail>
+          <ion-card-title>{{ service.name }}</ion-card-title>
+          <ion-card-subtitle>{{ service.price }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <div class="service-description">
+            {{ service.description }}
+          </div>
+          <ion-button fill="outline" slot="end">Book</ion-button>
+        </ion-card-content>
+
+      </ion-card>
+    </div>
+  </div>
+
+</ion-content>

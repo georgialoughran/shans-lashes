@@ -15,6 +15,4 @@ export class LashServiceService {
     return this.httpClient.get<any>(this.jsonServerURL);
   }
 
-  
-
 }

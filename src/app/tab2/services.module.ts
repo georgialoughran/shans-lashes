@@ -3,10 +3,10 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab2Page } from './tab2.page';
+import { ServicesComponent } from './services.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { ServicesRoutingModule } from './services-routing.module';
 import { LashServiceService } from 'src/services/lash-services/lash-service.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,11 +17,11 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     ExploreContainerComponentModule,
-    Tab2PageRoutingModule
+    ServicesRoutingModule
   ],
   providers: [
     LashServiceService
   ],
-  declarations: [Tab2Page]
+  declarations: [ServicesComponent]
 })
-export class Tab2PageModule {}
+export class ServicesModule {}
