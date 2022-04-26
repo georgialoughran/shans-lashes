@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactUsPage } from './contact-us.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { Tab3PageRoutingModule } from './contact-us-routing.module';
+import { ContactUsPageRoutingModule } from './contact-us-routing.module';
 
 @NgModule({
   imports: [
@@ -15,8 +15,8 @@ import { Tab3PageRoutingModule } from './contact-us-routing.module';
     FormsModule,
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: ContactUsPage }]),
-    Tab3PageRoutingModule,
+    ContactUsPageRoutingModule,
   ],
   declarations: [ContactUsPage]
 })
-export class Tab3PageModule {}
+export class ContactUsModule {}
