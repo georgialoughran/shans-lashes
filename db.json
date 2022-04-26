@@ -1,26 +1,26 @@
 {
   "service":[
     {
-      "name":"Full Set Classic",
-      "price":80,
+      "name": "Full Set Classic",
+      "price": 80,
       "description": "Single lash extensions are applied to individual natural lashes along the upper eyelid. The number depends on the look you want and how many natural lashes you have. ",
       "time": "2 hours"
     },
     {
-      "name":"Classic Infills",
-      "price":35,
+      "name": "Classic Infills",
+      "price": 35,
       "description": "Infills are recommended within 2-3 weeks of your last treatment. You will need at least 50% ofmyour treatment left or it will be charged as a full set. ",
       "time": "1 hour"
     },
     {
-      "name":"Lash Removal",
-      "price":30,
+      "name": "Lash Removal",
+      "price": 30,
       "description": "Lash extensions must be professionally removed with a special debonder. This gently removes them and all traces of the adhesive from the natural lash without damaging them. ",
       "time": "30 minutes"
     },
     {
-      "name":"lash lift and tint",
-      "price":35,
+      "name": "lash lift and tint",
+      "price": 35,
       "description": "Darken and lift your lashes without using mascara. A patch test is required 48 hours before treatment. ",
       "time": "30 minutes"
     }

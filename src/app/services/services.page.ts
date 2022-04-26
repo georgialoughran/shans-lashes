@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { LashServiceService } from 'src/services/lash-services/lash-service.service';
+import { Service } from 'src/model/service/service.model';
+import { LashService } from 'src/services/lash-services/lash-service.service';
 
 @Component({
   selector: 'app-services',
@@ -8,19 +8,15 @@ import { LashServiceService } from 'src/services/lash-services/lash-service.serv
   styleUrls: ['services.page.scss']
 })
 export class ServicesPage implements OnInit {
-  public listOfServices: Observable<any>[] = [];
+  public listOfServices: Service[];
 
-  constructor(public lashService: LashServiceService) {
-    //this.listOfServices=lashService.getService();
-    //console.log(this.listOfServices);
-  }
+  constructor(public lashService: LashService) { }
 
   public ngOnInit(): void {
     this.lashService.getService()
-    .subscribe(service => {
+    .subscribe((service: Service[]) => {
       this.listOfServices = service;
     });
-    console.log(this.listOfServices);
   }
 
 }
