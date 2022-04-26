@@ -7,7 +7,7 @@ import { LashServiceService } from 'src/services/lash-services/lash-service.serv
   templateUrl: 'services.page.html',
   styleUrls: ['services.page.scss']
 })
-export class ServicesComponent implements OnInit {
+export class ServicesPage implements OnInit {
   public listOfServices: Observable<any>[] = [];
 
   constructor(public lashService: LashServiceService) {

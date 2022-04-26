@@ -3,25 +3,20 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ServicesComponent } from './services.page';
+import { ContactUsPage } from './contact-us.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { ServicesRoutingModule } from './services-routing.module';
-import { LashServiceService } from 'src/services/lash-services/lash-service.service';
-import { HttpClientModule } from '@angular/common/http';
+import { Tab3PageRoutingModule } from './contact-us-routing.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    HttpClientModule,
     ExploreContainerComponentModule,
-    ServicesRoutingModule
+    RouterModule.forChild([{ path: '', component: ContactUsPage }]),
+    Tab3PageRoutingModule,
   ],
-  providers: [
-    LashServiceService
-  ],
-  declarations: [ServicesComponent]
+  declarations: [ContactUsPage]
 })
-export class ServicesModule {}
+export class Tab3PageModule {}
